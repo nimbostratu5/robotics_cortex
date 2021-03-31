@@ -1,0 +1,183 @@
+<Version>1.0.1</Version>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMultipleMotors">
+    <Parameters>
+        <Parameter name="speed" type="short" default="50">100</Parameter>
+        <Parameter name="firstMotor" type="base typedef" default="port1" typeDef="tMotor">rightMotor</Parameter>
+        <Parameter name="secondMotor" type="base typedef" default="noMotor" typeDef="tMotor">leftMotor</Parameter>
+        <Parameter name="thirdMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+        <Parameter name="fourthMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">3.5</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="turnLeft">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">rotations</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMultipleMotors">
+    <Parameters>
+        <Parameter name="speed" type="short" default="50">100</Parameter>
+        <Parameter name="firstMotor" type="base typedef" default="port1" typeDef="tMotor">rightMotor</Parameter>
+        <Parameter name="secondMotor" type="base typedef" default="noMotor" typeDef="tMotor">leftMotor</Parameter>
+        <Parameter name="thirdMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+        <Parameter name="fourthMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">3.8</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="turnRight">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">rotations</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMultipleMotors">
+    <Parameters>
+        <Parameter name="speed" type="short" default="50">100</Parameter>
+        <Parameter name="firstMotor" type="base typedef" default="port1" typeDef="tMotor">leftMotor</Parameter>
+        <Parameter name="secondMotor" type="base typedef" default="noMotor" typeDef="tMotor">rightMotor</Parameter>
+        <Parameter name="thirdMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+        <Parameter name="fourthMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">2.5</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="turnRight">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">rotations</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">1.5</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMultipleMotors">
+    <Parameters>
+        <Parameter name="speed" type="short" default="50">70</Parameter>
+        <Parameter name="firstMotor" type="base typedef" default="port1" typeDef="tMotor">leftMotor</Parameter>
+        <Parameter name="secondMotor" type="base typedef" default="noMotor" typeDef="tMotor">rightMotor</Parameter>
+        <Parameter name="thirdMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+        <Parameter name="fourthMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">2</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<RobotConfiguration>#pragma config(I2C_Usage, I2C1, i2cSensors)
+#pragma config(Sensor, in3,    potentiometer,  sensorPotentiometer)
+#pragma config(Sensor, in4,    light,          sensorReflection)
+#pragma config(Sensor, in6,    accelZ,         sensorAccelerometer)
+#pragma config(Sensor, in7,    accelY,         sensorAccelerometer)
+#pragma config(Sensor, in8,    accelX,         sensorAccelerometer)
+#pragma config(Sensor, dgtl1,  rightEncoder,   sensorQuadEncoder)
+#pragma config(Sensor, dgtl3,  leftEncoder,    sensorQuadEncoder)
+#pragma config(Sensor, dgtl6,  frontTouch,     sensorTouch)
+#pragma config(Sensor, dgtl8,  sonarCM,        sensorSONAR_cm)
+#pragma config(Sensor, dgtl11, backTouch,      sensorTouch)
+#pragma config(Sensor, dgtl12, led,            sensorLEDtoVCC)
+#pragma config(Sensor, I2C_1,  ,               sensorQuadEncoderOnI2CPort,    , AutoAssign)
+#pragma config(Sensor, I2C_2,  ,               sensorQuadEncoderOnI2CPort,    , AutoAssign)
+#pragma config(Sensor, I2C_3,  ,               sensorQuadEncoderOnI2CPort,    , AutoAssign)
+#pragma config(Motor,  port2,           rightMotor,    tmotorVex393_MC29, PIDControl, reversed, driveRight, encoderPort, I2C_1)
+#pragma config(Motor,  port3,           leftMotor,     tmotorVex393_MC29, PIDControl, driveLeft, encoderPort, I2C_2)
+#pragma config(Motor,  port6,           armMotor,      tmotorVex393_MC29, PIDControl, encoderPort, I2C_3)
+//*!!Code automatically generated by 'ROBOTC' configuration wizard               !!*//
+</RobotConfiguration>
+
+<CSource>#pragma config(I2C_Usage, I2C1, i2cSensors)
+#pragma config(Sensor, in3,    potentiometer,  sensorPotentiometer)
+#pragma config(Sensor, in4,    light,          sensorReflection)
+#pragma config(Sensor, in6,    accelZ,         sensorAccelerometer)
+#pragma config(Sensor, in7,    accelY,         sensorAccelerometer)
+#pragma config(Sensor, in8,    accelX,         sensorAccelerometer)
+#pragma config(Sensor, dgtl1,  rightEncoder,   sensorQuadEncoder)
+#pragma config(Sensor, dgtl3,  leftEncoder,    sensorQuadEncoder)
+#pragma config(Sensor, dgtl6,  frontTouch,     sensorTouch)
+#pragma config(Sensor, dgtl8,  sonarCM,        sensorSONAR_cm)
+#pragma config(Sensor, dgtl11, backTouch,      sensorTouch)
+#pragma config(Sensor, dgtl12, led,            sensorLEDtoVCC)
+#pragma config(Sensor, I2C_1,  ,               sensorQuadEncoderOnI2CPort,    , AutoAssign)
+#pragma config(Sensor, I2C_2,  ,               sensorQuadEncoderOnI2CPort,    , AutoAssign)
+#pragma config(Sensor, I2C_3,  ,               sensorQuadEncoderOnI2CPort,    , AutoAssign)
+#pragma config(Motor,  port2,           rightMotor,    tmotorVex393_MC29, PIDControl, reversed, driveRight, encoderPort, I2C_1)
+#pragma config(Motor,  port3,           leftMotor,     tmotorVex393_MC29, PIDControl, driveLeft, encoderPort, I2C_2)
+#pragma config(Motor,  port6,           armMotor,      tmotorVex393_MC29, PIDControl, encoderPort, I2C_3)
+//*!!Code automatically generated by 'ROBOTC' configuration wizard               !!*//
+
+
+task main()
+{
+	wait(1, seconds);
+	setMultipleMotors(100, rightMotor, leftMotor, noMotor, noMotor);
+	wait(3.5, seconds);
+	turnLeft(1, rotations, 50);
+	wait(1, seconds);
+	setMultipleMotors(100, rightMotor, leftMotor, noMotor, noMotor);
+	wait(3.8, seconds);
+	turnRight(1, rotations, 50);
+	wait(1, seconds);
+	setMultipleMotors(100, leftMotor, rightMotor, noMotor, noMotor);
+	wait(2.5, seconds);
+	turnRight(1, rotations, 50);
+	wait(1.5, seconds);
+	setMultipleMotors(70, leftMotor, rightMotor, noMotor, noMotor);
+	wait(2, seconds);
+}
+</CSource>
